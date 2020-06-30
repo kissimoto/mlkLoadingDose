@@ -1,0 +1,39 @@
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+  }
+
+
+label {
+  font-size: 1em;
+  font: open sans;
+  font-weight: 400;
+  color: #114404;
+}
+
+input {
+  width: 6em;
+  height: 1.8em;
+  padding: 4px 10px;
+  border: 1px solid #666;
+  background: #f0f4f8;
+  color: #077a58;
+  font-size: 16px;
+}
+
+.options {
+    width: 8.5em;
+    height: 1.8em;
+}
+
+#submitbutton {
+    width: 8em;
+    background: #447a6a;
+    color: rgb(7, 7, 12);
+}
+
+#resultheader {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #114404;  
+}

@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLK Loading Dose Calculator</title>
+    <link href="mlkLoad.css" rel="stylesheet" type="text/css">
+<body>  
+     <h1>Morphine Lidocaine Ketamine (MLK) Loading Dose Rates<br></h1>
+        <h2>Dose for Dogs and Cats<br></h2> 
+        <h3>Cats limit lidocaine to 0.25 - 0.5 mg/kg<br>
+        Dogs usual lidocaine loading dose 1.0 mg/kg</h3>
+        <br>   
+    <div class="wrapper">
+        <table>
+        <tbody>
+    <tr>
+        <td><label for="weight">Animal weight (kg)</label></td>
+        <td><input type="number"  id="weight" required value="" placeholder="kg"></td>
+    </tr>
+    <tr>
+        <td><label for="ldMorph">Morphine fixed value 0.5 mg/kg</label></td>
+        <td> <select class = 'options' id="ldMorph">
+            <option value="0.5">0.5 mg/kg IM</option>
+
+            </select></td>
+    </tr>
+    <tr>
+        <td><label for="ldLido">Lidocaine 0.25 - 1 mg/kg IV</label></td>
+        <td> <select class = 'options' id="ldLido">
+        <option value="0.25">0.25 mg/kg IV</option>
+        <option value="0.5">0.5 mg/kg IV</option>
+        <option value="1">1 mg/kg IV</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td><label for="ldKeta">Ketamine 0.25 - 0.5 mg/kg IV</label></td>
+        <td> <select class = 'options' id="ldKeta">
+        <option value="0.25">0.25 mg/kg IV</option>
+        <option value="0.5">0.5 mg/kg IV</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button onclick=mlkLoad() id="submitbutton">Calculate</button></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="result"></div>  
+<script src="mlkLoad.js"></script>
+</body>
+</html>
